@@ -52,6 +52,7 @@ public class GameManager : MonoBehaviour
     {
         Destroy(Character);
         MyUIManager.DisplayMessage("Game Over!", 3f);
+        Debug.Log("true");
         MyUIManager.RestartButton.SetActive(true);
     }
 
@@ -64,6 +65,7 @@ public class GameManager : MonoBehaviour
     // Restart the game
     public void RestartGame()
     {
+        Debug.Log("RestartGame 함수가 호출되었습니다.");
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }

@@ -11,6 +11,7 @@ public class UIManager : MonoBehaviour
 
     void Awake()
     {
+        Debug.Log("false");
         RestartButton.SetActive(false);
     }
 
